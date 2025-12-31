@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern WebSocket Chat</title>
+  <title>JDChat</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -78,7 +78,7 @@
   </div>
 
   <script>
-    const socket = new WebSocket('ws://localhost:8787');
+    const socket = new WebSocket('wss://jdchat-production.up.railway.app');
     const usernameModal = document.getElementById('usernameModal');
     const chatContainer = document.getElementById('chatContainer');
     const messagesDiv = document.getElementById('messages');
